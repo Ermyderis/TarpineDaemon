@@ -6,6 +6,7 @@
 void reading(char config[256], char line[1000], int linenum, char aud[50], char audthird[50], char vid[50], char vidthird[50], char pho[50], char phothird[50], 
     char doc[50], char dochird[50], char diwatch[50], char diwatchthird[50], char typwatch[50], char typwatchthird[50]){
         FILE *fpt= NULL;
+        char *pos = NULL;
         fpt = fopen(config, "r");
     	if (!fpt){
         	printf("Error, cant open config");
@@ -18,29 +19,41 @@ void reading(char config[256], char line[1000], int linenum, char aud[50], char 
                 if(sscanf(line, "%s%s%s", firstColumn, secondColumn, thirdColumn) != 3){
                     //fprintf(fp, "\nSyntax error, line%d\n", linenum);
                 }
-                if(linenum == 1){
+                pos = strstr(firstColumn, "audio");
+                if(pos != NULL){
                     strcpy(aud, firstColumn);
                     strcpy(audthird, thirdColumn);
+                    pos = NULL;
                 }
-                if(linenum == 2){
+                pos = strstr(firstColumn, "video");
+                if(pos != NULL){
                     strcpy(vid, firstColumn);
                     strcpy(vidthird, thirdColumn);
+                    pos = NULL;
                 }
-                if(linenum == 3){
+                pos = strstr(firstColumn, "photo");
+                if(pos != NULL){
                     strcpy(pho, firstColumn);
                     strcpy(phothird, thirdColumn);
+                    pos = NULL;
                 }
-                if(linenum == 4){
+                pos = strstr(firstColumn, "document");
+                if(pos != NULL){
                     strcpy(doc, firstColumn);
                     strcpy(dochird, thirdColumn);
+                    pos = NULL;
                 }
-                if(linenum == 5){
+                pos = strstr(firstColumn, "dir_to_watch");
+                if(pos != NULL){
                     strcpy(diwatch, firstColumn);
                     strcpy(diwatchthird, thirdColumn);
+                    pos = NULL;
                 }
-                if(linenum == 6){
+                pos = strstr(firstColumn, "types_to_watch");
+                if(pos != NULL){
                     strcpy(typwatch, firstColumn);
                     strcpy(typwatchthird, thirdColumn);
+                    pos = NULL;
                 }
      
             }

@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <time.h>
 
-
+//Creating Config file
 int createConfigFile(char *fileConfig){
 	FILE *fp;
 
@@ -23,18 +23,19 @@ int createConfigFile(char *fileConfig){
     return 0;
 
 }
-
+//Creating log file
 int createLogFile(char *fileLog){
 FILE *fpt;
 
-	fpt = fopen(fileLog,"w");
+	fpt = fopen(fileLog,"a");
 	if(fpt==NULL){
 		printf("Error in opening file");
 		exit(1);
 	}
+	fpt = fopen(fileLog,"a");
 	time_t t = time(NULL);
   	struct tm tm = *localtime(&t);
-  	fprintf(fpt, "File created : %d-%02d-%02d %02d:%02d:%02d\n", tm.tm_year + 1900, tm.tm_mon + 1, tm.tm_mday, tm.tm_hour, tm.tm_min, tm.tm_sec);
+  	fprintf(fpt, "File : %d-%02d-%02d %02d:%02d:%02d\n", tm.tm_year + 1900, tm.tm_mon + 1, tm.tm_mday, tm.tm_hour, tm.tm_min, tm.tm_sec);
 	fclose(fpt);
 
     return 0;

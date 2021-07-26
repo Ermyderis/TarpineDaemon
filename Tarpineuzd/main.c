@@ -58,22 +58,13 @@ int main(void){
     reading(config, line, linenum, aud, audthird, vid, vidthird, pho, phothird, doc, dochird, diwatch, diwatchthird, typwatch, typwatchthird);
 
 
-    fprintf(fp, "\n%s = %s \n%s = %s \n%s = %s", aud, audthird, vid, vidthird, pho, phothird);
-    fprintf(fp, "\n%s = %s", doc, dochird);
-    fprintf(fp, "\n%s = %s", typwatch, typwatchthird);
-    fprintf(fp, "\n%s = %s", diwatch, diwatchthird);
+    //fprintf(fp, "\n%s = %s \n%s = %s \n%s = %s", aud, audthird, vid, vidthird, pho, phothird);
+    //fprintf(fp, "\n%s = %s", doc, dochird);
+    //fprintf(fp, "\n%s = %s", typwatch, typwatchthird);
+    //fprintf(fp, "\n%s = %s", diwatch, diwatchthird);
 
-    //compare strings
-    char *pos;
-    pos = strstr(aud, "audio");
+    listFilesRecursively(logos, "/home/kali/Desktop/testas nr.1");
 
-    if(pos != NULL){
-        fprintf(fp, "\nAudio: %s\n", audthird);
-    }
-    pos = strstr(pho, "photo");
-    if(pos != NULL){
-        fprintf(fp, "\nPhoto: %s\n", phothird);
-    }
 
         fclose(fp);
 

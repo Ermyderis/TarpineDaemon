@@ -1,1 +1,16 @@
-File created : 2021-07-23 05:48:59
+File : 2021-07-26 12:47:42
+
+Daemon started : Mon Jul 26 12:47:42 2021
+
+
+0Conect to recur
+Directorys /home/kali/Desktop/testas nr.2/Videos created: Mon Jul 26 12:47:47 2021
+Directorys /home/kali/Desktop/testas nr.2/Pictures created: Mon Jul 26 12:47:47 2021
+Directorys /home/kali/Desktop/testas nr.2/Music created: Mon Jul 26 12:47:47 2021
+Directorys /home/kali/Desktop/testas nr.2/Documents created: Mon Jul 26 12:47:47 2021
+
+1Conect to recur
+2Conect to recur
+3Conect to recur
+Daemon stoped : Mon Jul 26 12:48:02 2021
+

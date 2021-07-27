@@ -1,16 +1,12 @@
-File : 2021-07-26 12:47:42
+File : 2021-07-27 07:38:57
 
-Daemon started : Mon Jul 26 12:47:42 2021
+Daemon started : Tue Jul 27 07:38:57 2021
 
 
-0Conect to recur
-Directorys /home/kali/Desktop/testas nr.2/Videos created: Mon Jul 26 12:47:47 2021
-Directorys /home/kali/Desktop/testas nr.2/Pictures created: Mon Jul 26 12:47:47 2021
-Directorys /home/kali/Desktop/testas nr.2/Music created: Mon Jul 26 12:47:47 2021
-Directorys /home/kali/Desktop/testas nr.2/Documents created: Mon Jul 26 12:47:47 2021
+Directorys /home/kali/Music created
+Directorys /home/kali/Documents created
+Directorys /home/kali/Videos created
+/home/kali/Downloads/mp3.mp3 moved to /home/kali/Music/mp3.mp3
 
-1Conect to recur
-2Conect to recur
-3Conect to recur
-Daemon stoped : Mon Jul 26 12:48:02 2021
+Daemon stoped : Tue Jul 27 07:39:42 2021
 

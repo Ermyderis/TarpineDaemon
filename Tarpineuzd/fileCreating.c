@@ -12,12 +12,14 @@ int createConfigFile(char *fileConfig){
 		exit(1);
 	}
 	
-	fprintf(fp, "audio_types = mp3,flac,wav\n");
-	fprintf(fp, "video_types = mkv,avi,mp4\n");
-	fprintf(fp, "photo_types = svg,jpeg,png\n");
-	fprintf(fp, "document_types = docx,txt,pdf\n");
-	fprintf(fp, "dir_to_watch = /home/user/Downloads\n");
-	fprintf(fp, "types_to_watch = audio,document\n");
+	fprintf(fp, "audio_types = .mp3,.flac,.wav\n");
+	fprintf(fp, "video_types = .mkv,.avi,.mp4\n");
+	fprintf(fp, "photo_types = .svg,.jpeg,.png\n");
+	fprintf(fp, "document_types = .docx,.txt,.pdf\n");
+	fprintf(fp, "dir_to_watch = /home/kali/Downloads\n");
+	//for ubuntu
+	//fprintf(fp, "dir_to_watch = /home/user/Downloads\n");
+	fprintf(fp, "types_to_watch = audio_types,document_types,photo_types,video_types \n");
 	fclose(fp);
 
     return 0;

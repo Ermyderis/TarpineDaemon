@@ -30,7 +30,7 @@ int main(void){
   	fprintf(fp, "\nDaemon started : %s\n",  asctime (timeinfo) );
     fclose(fp);
 
-    while (i < 4)
+    while (i < 9)
     {
     char line[1000] = "";
     int linenum = 0;
@@ -48,10 +48,10 @@ int main(void){
     char typwatchthird[50]= "";
 
         fp = fopen (logos, "a");
-        fprintf(fp, "\n");
+        //fprintf(fp, "\n");
         fflush(fp);
         sleep(5);
-        fprintf(fp, "%d", i);
+        //fprintf(fp, "%d", i);
         fflush(fp);
         i++;
     //geting values from config
@@ -63,7 +63,7 @@ int main(void){
     //fprintf(fp, "\n%s = %s", typwatch, typwatchthird);
     //fprintf(fp, "\n%s = %s", diwatch, diwatchthird);
 
-    listFilesRecursively(logos, "/home/kali/Desktop/testas nr.1");
+    listFilesRecursively(logos, diwatchthird, aud, audthird, vid, vidthird, pho, phothird, doc, dochird, diwatch, diwatchthird, typwatch, typwatchthird);
 
 
         fclose(fp);

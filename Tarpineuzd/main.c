@@ -30,7 +30,7 @@ int main(void){
   	fprintf(fp, "\nDaemon started : %s\n",  asctime (timeinfo) );
     fclose(fp);
 
-    while (i < 9)
+    while (1)
     {
     char line[1000] = "";
     int linenum = 0;

@@ -3,7 +3,7 @@ CFLAGS:=-Wall
 CPPFLAGS:=-I$(CURDIR)
 SRC:=$(wildcard *.c)
 OBJS:=$(SRC:.c=.o)
-BIN:=Program
+BIN:=DaemonProgramd
 
 .PHONY: all clean
 
